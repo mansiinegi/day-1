@@ -1,15 +1,36 @@
-
-/* this is comment */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
 
 
-*{
+
+ *{
   box-sizing: border-box;
   margin: 0;
   padding:0;
   font-family: 'Red Hat Display', sans-serif;
-  background:hsl(225, 100%, 94%);
+  overflow: hidden;
+} 
+
+
+section{
+  position: relative;
+  width: auto;
+  margin: auto;
+  padding: 20%;
+  
 }
+  
+
+body{
+  background-image: url("pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  object-fit:cover;
+  opacity: 0.4;
+}
+
+/* section img{
+  background-repeat: no-repeat;
+} */
+
 
 .showcase{
   display: flex;
@@ -17,34 +38,66 @@
   align-items: center;
   flex-direction: column;
   padding: 50px;
+  /* box-shadow: 100px 100px  8px lightgray; */
+  
+
 }
 
+.showcase h2{
+  font-size: 3em;
+  /* font-weight: bold; */
+}
+
+.showcase p{
+  color:gray;
+  
+}
+
+.showcase img{
+  border: none;
+  border-radius: 20px;
+}
 
 .icon{
+  width: 400px;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
-  background:  hsl(225, 100%, 98%);
-  padding: 10px 30px;
+  justify-content:space-between;
+  align-items:center;
+  border-radius: 20px;
 }
 
+
+
 .text{
+  width:230px;
+  height:auto;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .icon a{
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
 .bt1{
-  display:inline-block;
-  font-size: 1em;
+  font-size: 20px;
+  height: 80px;
+  width: 450px;
   background: hsl(245, 75%, 52%);
-  padding: 10px 30px;
-  text-decoration: none;
   color: #fff;
-  
-  
-  
+  border: none;
+  border-radius: 20px;
+}
+
+.bt2{
+  font-size: 20px;
+  height:80px;
+  width: 450px;
+  background:hsl(225, 100%, 94%);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
 }
